@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  height: 100vh;
+font-family: "Poppins", sans-serif;
+@apply gradient
+
+
+}
+
+.gradient{
+  background: rgb(22,0,128);
+background: -moz-linear-gradient(0deg, rgba(22,0,128,1) 20%, rgba(206,132,67,1) 100%);
+background: -webkit-linear-gradient(0deg, rgba(22,0,128,1) 20%, rgba(206,132,67,1) 100%);
+background: linear-gradient(0deg, rgba(22,0,128,1) 20%, rgba(206,132,67,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#160080",endColorstr="#ce8443",GradientType=1);
+
+}
+
+.resultScoreNum{
+  @apply text-lg font-semibold
+}
+
+.resultScore{
+  font-family: "Roboto Mono", monospace;
+  @apply text-base font-normal text-center mt-12
+}
